@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient.SNI" Version="6.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Inventario.Domain\Inventario.Domain.csproj" />
+    <ProjectReference Include="..\Inventario.Infrastructure\Inventario.Infrastructure.csproj" />
+    <ProjectReference Include="..\Inventario.Utils\Inventario.Utils.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+  </ItemGroup>
+
+</Project>
