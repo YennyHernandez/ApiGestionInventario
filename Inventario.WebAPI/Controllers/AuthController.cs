@@ -32,8 +32,8 @@ namespace Inventario.WebAPI.Controllers
         /// <example>
         /// POST /api/auth/login
         /// {
-        ///   "username": "admin",
-        ///   "password": "yeniadmin"
+        ///   "username": "username",
+        ///   "password": "password"
         /// }
         /// 
         /// Response 200:
@@ -117,7 +117,7 @@ namespace Inventario.WebAPI.Controllers
         /// <summary>
         /// Contraseña del usuario
         /// </summary>
-        /// <example>yeniadmin</example>
+        /// <example>password</example>
         public string Password { get; set; } = string.Empty;
     }
 
