@@ -189,7 +189,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(opt => opt.SwaggerEndpoint("V1/swagger.json", "Gestion Inventario"));
 }
 
-app.UseHttpsRedirection();
+// Solo usar HTTPS redirection en producción
+if (!app.Environment.IsDevelopment())
+{
+    app.UseHttpsRedirection();
+}
+
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
